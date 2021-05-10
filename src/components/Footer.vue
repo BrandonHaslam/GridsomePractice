@@ -1,6 +1,6 @@
 <template>
   <footer>
-    I am a footer
+    I am a footer test
   </footer>
 </template>
 <script>
