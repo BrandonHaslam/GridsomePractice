@@ -9,10 +9,19 @@
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header>
-    <slot/>
+    <slot />
+    <Footer />
   </div>
 </template>
-
+<script>
+import Footer from "../components/Footer";
+import Footer from "../components/Footer.vue";
+export default {
+  components: {
+    Footer,
+  },
+};
+</script>
 <static-query>
 query {
   metadata {
@@ -23,9 +32,10 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 
